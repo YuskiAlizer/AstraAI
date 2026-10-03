@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49D0E516084AD99A51227F5F /* CalendarSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7B56CD4C0089B7A05792 /* CalendarSkill.swift */; };
+		91DAD81F505FAA13C5DB7AF0 /* WeatherSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F82CECA27248149110EED /* WeatherSkill.swift */; };
+		F9229E276F2EEBC585F9AF99 /* APISkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8FC5991D7C3E024349DFE /* APISkill.swift */; };
+		2F353459A02D221199A1EC81 /* WebSearchSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395879F19141C1E887933D4B /* WebSearchSkill.swift */; };
+		2055E7D2F57AA8D8FBF10D4C /* FilesSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9CC23D0C8348EB461FD34 /* FilesSkill.swift */; };
+		D59B4C423E4E5C70BA468635 /* MemorySkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98B4BF04FC16D0CA2A8225 /* MemorySkill.swift */; };
+		3A47F301EA413CB507C302A8 /* VisionSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55775A1F51ECE9DEE8BF2248 /* VisionSkill.swift */; };
+		A559C4CEC9D828E3B1211A0C /* WebBrowserSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE0632403F789CA4C82E54 /* WebBrowserSkill.swift */; };
+		5FB6FCEC7AF5A5D7F0721004 /* NewsSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36B534BB352DAD4A7B7C21 /* NewsSkill.swift */; };
+		BD69D2FABD751B9BA90DD1CE /* CodeSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F68ECEAFECB877022B82465 /* CodeSkill.swift */; };
+		C59444327EAD49D463233B36 /* VoiceSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54245992E3AAFBA0458ADAF /* VoiceSkill.swift */; };
+		1A517A293C4FEC1DA7E2EA2B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A70A6EC7ECAA6A54E17B6A9 /* RootView.swift */; };
+		256821ED2C3FEF2A771BBA95 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40C37F2273BAB44055A5E9 /* ChatView.swift */; };
+		510533E84901F28AD6D9FE5B /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB4B87FBDFE3C7408F709C /* SkillsView.swift */; };
+		B188AD5A98AACC8E36AE6F6F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0393F6655D2D2937C94CC92D /* SettingsView.swift */; };
+		20B80CA6560FAF7A79E6B3D6 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25458D45B0A3E4E5AF3F71 /* MemoryView.swift */; };
+		D5F9B791ED0D36F53F374131 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8573D254A71E562028A30 /* HistoryView.swift */; };
+		A65EC5CF6FA842BDF1B827A9 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF53BC207E7E6810B3747 /* VoiceView.swift */; };
+		0A5826D2E8696144F1EFD682 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2563DCF530CFD0C37B9B901 /* FileManagerExtension.swift */; };
+		8138750321F729F3B33EF135 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78556CD33D6DAAB7BE1C701 /* AppEnvironment.swift */; };
+		A51965B1E4B54C1FED69938F /* AstraAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8273571E178F268D299F6 /* AstraAIApp.swift */; };
+		FA3352EE24295D0396ECA545 /* AgentSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B681A68A05B0453C1EA631A0 /* AgentSkill.swift */; };
+		E06AE992BD99599B1CEDDB97 /* SkillRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3740759F1FB9D1DEEBCF1A /* SkillRegistry.swift */; };
+		FC9F02B87F92B1958F5265E1 /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA6508640CE5A3944A6813 /* AIProvider.swift */; };
+		57FB90B15C1646E0FC751AEF /* AIProviderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEB12196CCC16690EBF3EA9 /* AIProviderSettings.swift */; };
+		DCFB11155872896669DA25D0 /* AIProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9AFFA4239ED89365B6872 /* AIProviderRegistry.swift */; };
+		7A1A69A465D003BE9C42B983 /* ProviderImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA2425F89FFA3FE6402CB71 /* ProviderImplementations.swift */; };
+		E1B564C66153CDEEC943A688 /* ConversationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC3170E21C7FAA89C451BC /* ConversationStore.swift */; };
+		A847F305C3F9AB6D595190D7 /* SecureKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B762F8990BAA2FFECFEC3F5 /* SecureKeyStore.swift */; };
+		7E302F273F3572F70ED7A070 /* MemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ADF8FE6A243AAB8CE3DD31 /* MemoryStore.swift */; };
+		756413B9C7BA1666BC84B109 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A328564614776A17B788E8D /* AppLogger.swift */; };
+		41FE17607CF23B94CA9CA408 /* AgentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5466F3EF2D30410A5811BD /* AgentCore.swift */; };
+		49562A8FBC376323CD6309AD /* AgentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80712E9AB63D2CF61FDA366E /* AgentMessage.swift */; };
+		DC7AB9F5F48941383DD54FB3 /* AgentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E9A9EDFBE1012AF37F24C /* AgentEvent.swift */; };
+		C5010EEB540198C4B105CD51 /* ToolCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DACBFD99337772E9485E6 /* ToolCall.swift */; };
+		D20840C5FDDDB72BEC70351C /* AgentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84BDD403F9C000C24A38786 /* AgentContext.swift */; };
+		2D5B221BBE62736FEEFC8513 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D35CAF4481FAB5856B15547 /* HTTPClient.swift */; };
+		AA8BBCAE59EE073077F3DD1B /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E25D8994CA6B91AF14527E /* JSONValue.swift */; };
+		E4E19714E4138FA6BF0819A3 /* AgentCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C1A57722488B97E2E072 /* AgentCoreTests.swift */; };
+		7E9421E0A6F50CB685D034BE /* SkillRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8AA4FF7F9F5C13A42EA362 /* SkillRegistryTests.swift */; };
+		F1032C5DCD7D01BBDF039BC0 /* JSONValueAndConversationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EE59FBD0D9034609915BB /* JSONValueAndConversationTests.swift */; };
+		2A79F6B608DDC64ABFB7382B /* MemoryStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2690C1500A62E0C440F000CB /* MemoryStoreTests.swift */; };
+		F74077D0766ACAF76D776610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BA8CDCE55AD859756C908D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63CB7B56CD4C0089B7A05792 /* CalendarSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Calendar/CalendarSkill.swift"; sourceTree = SOURCE_ROOT; };
+		7A9F82CECA27248149110EED /* WeatherSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Weather/WeatherSkill.swift"; sourceTree = SOURCE_ROOT; };
+		6FC8FC5991D7C3E024349DFE /* APISkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/API/APISkill.swift"; sourceTree = SOURCE_ROOT; };
+		395879F19141C1E887933D4B /* WebSearchSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/WebSearch/WebSearchSkill.swift"; sourceTree = SOURCE_ROOT; };
+		52C9CC23D0C8348EB461FD34 /* FilesSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Files/FilesSkill.swift"; sourceTree = SOURCE_ROOT; };
+		BA98B4BF04FC16D0CA2A8225 /* MemorySkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Memory/MemorySkill.swift"; sourceTree = SOURCE_ROOT; };
+		55775A1F51ECE9DEE8BF2248 /* VisionSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Vision/VisionSkill.swift"; sourceTree = SOURCE_ROOT; };
+		63DE0632403F789CA4C82E54 /* WebBrowserSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/WebBrowser/WebBrowserSkill.swift"; sourceTree = SOURCE_ROOT; };
+		8F36B534BB352DAD4A7B7C21 /* NewsSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/News/NewsSkill.swift"; sourceTree = SOURCE_ROOT; };
+		1F68ECEAFECB877022B82465 /* CodeSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Code/CodeSkill.swift"; sourceTree = SOURCE_ROOT; };
+		D54245992E3AAFBA0458ADAF /* VoiceSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Skills/Voice/VoiceSkill.swift"; sourceTree = SOURCE_ROOT; };
+		9A70A6EC7ECAA6A54E17B6A9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/RootView.swift"; sourceTree = SOURCE_ROOT; };
+		7E40C37F2273BAB44055A5E9 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/Chat/ChatView.swift"; sourceTree = SOURCE_ROOT; };
+		9FCB4B87FBDFE3C7408F709C /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/Skills/SkillsView.swift"; sourceTree = SOURCE_ROOT; };
+		0393F6655D2D2937C94CC92D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/Settings/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		3A25458D45B0A3E4E5AF3F71 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/Memory/MemoryView.swift"; sourceTree = SOURCE_ROOT; };
+		B2E8573D254A71E562028A30 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/History/HistoryView.swift"; sourceTree = SOURCE_ROOT; };
+		EA2BF53BC207E7E6810B3747 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/UI/Voice/VoiceView.swift"; sourceTree = SOURCE_ROOT; };
+		D2563DCF530CFD0C37B9B901 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/App/FileManagerExtension.swift"; sourceTree = SOURCE_ROOT; };
+		B78556CD33D6DAAB7BE1C701 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/App/AppEnvironment.swift"; sourceTree = SOURCE_ROOT; };
+		2FD8273571E178F268D299F6 /* AstraAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/App/AstraAIApp.swift"; sourceTree = SOURCE_ROOT; };
+		B681A68A05B0453C1EA631A0 /* AgentSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Skills/AgentSkill.swift"; sourceTree = SOURCE_ROOT; };
+		7D3740759F1FB9D1DEEBCF1A /* SkillRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Skills/SkillRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		DCDA6508640CE5A3944A6813 /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Providers/AIProvider.swift"; sourceTree = SOURCE_ROOT; };
+		4EEB12196CCC16690EBF3EA9 /* AIProviderSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Providers/AIProviderSettings.swift"; sourceTree = SOURCE_ROOT; };
+		0DD9AFFA4239ED89365B6872 /* AIProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Providers/AIProviderRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		3DA2425F89FFA3FE6402CB71 /* ProviderImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Providers/ProviderImplementations.swift"; sourceTree = SOURCE_ROOT; };
+		D1DC3170E21C7FAA89C451BC /* ConversationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Storage/ConversationStore.swift"; sourceTree = SOURCE_ROOT; };
+		2B762F8990BAA2FFECFEC3F5 /* SecureKeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Storage/SecureKeyStore.swift"; sourceTree = SOURCE_ROOT; };
+		E4ADF8FE6A243AAB8CE3DD31 /* MemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Storage/MemoryStore.swift"; sourceTree = SOURCE_ROOT; };
+		6A328564614776A17B788E8D /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Storage/AppLogger.swift"; sourceTree = SOURCE_ROOT; };
+		4E5466F3EF2D30410A5811BD /* AgentCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Agent/AgentCore.swift"; sourceTree = SOURCE_ROOT; };
+		80712E9AB63D2CF61FDA366E /* AgentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Agent/AgentMessage.swift"; sourceTree = SOURCE_ROOT; };
+		2A4E9A9EDFBE1012AF37F24C /* AgentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Agent/AgentEvent.swift"; sourceTree = SOURCE_ROOT; };
+		276DACBFD99337772E9485E6 /* ToolCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Agent/ToolCall.swift"; sourceTree = SOURCE_ROOT; };
+		A84BDD403F9C000C24A38786 /* AgentContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Agent/AgentContext.swift"; sourceTree = SOURCE_ROOT; };
+		7D35CAF4481FAB5856B15547 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Networking/HTTPClient.swift"; sourceTree = SOURCE_ROOT; };
+		96E25D8994CA6B91AF14527E /* JSONValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAI/Core/Networking/JSONValue.swift"; sourceTree = SOURCE_ROOT; };
+		9B97C1A57722488B97E2E072 /* AgentCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAITests/AgentCoreTests.swift"; sourceTree = SOURCE_ROOT; };
+		FD8AA4FF7F9F5C13A42EA362 /* SkillRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAITests/SkillRegistryTests.swift"; sourceTree = SOURCE_ROOT; };
+		1B2EE59FBD0D9034609915BB /* JSONValueAndConversationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAITests/JSONValueAndConversationTests.swift"; sourceTree = SOURCE_ROOT; };
+		2690C1500A62E0C440F000CB /* MemoryStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstraAITests/MemoryStoreTests.swift"; sourceTree = SOURCE_ROOT; };
+		9B22A2E9E0D237D5A14A0DA8 /* AstraAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstraAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DCACFA5A6035C5AAE2A821 /* AstraAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1D1E2002267DEB1DBE387E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AstraAI/Resources/Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7BA8CDCE55AD859756C908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AstraAI/Resources/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3967E92F646B066A7221524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7D723A10D96A0609CE750A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A21DD6044BB4E1BECEE02F5D /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				4E5466F3EF2D30410A5811BD /* AgentCore.swift */,
+				80712E9AB63D2CF61FDA366E /* AgentMessage.swift */,
+				2A4E9A9EDFBE1012AF37F24C /* AgentEvent.swift */,
+				276DACBFD99337772E9485E6 /* ToolCall.swift */,
+				A84BDD403F9C000C24A38786 /* AgentContext.swift */,
+			);
+			path = "Core/Agent";
+			sourceTree = "<group>";
+		};
+		7C3F281CA6171E84FE090357 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA6508640CE5A3944A6813 /* AIProvider.swift */,
+				4EEB12196CCC16690EBF3EA9 /* AIProviderSettings.swift */,
+				0DD9AFFA4239ED89365B6872 /* AIProviderRegistry.swift */,
+				3DA2425F89FFA3FE6402CB71 /* ProviderImplementations.swift */,
+			);
+			path = "Core/Providers";
+			sourceTree = "<group>";
+		};
+		51A732228ED8D21E5511343F /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				B681A68A05B0453C1EA631A0 /* AgentSkill.swift */,
+				7D3740759F1FB9D1DEEBCF1A /* SkillRegistry.swift */,
+			);
+			path = "Core/Skills";
+			sourceTree = "<group>";
+		};
+		F686F932C8E9E811A95B5468 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC3170E21C7FAA89C451BC /* ConversationStore.swift */,
+				2B762F8990BAA2FFECFEC3F5 /* SecureKeyStore.swift */,
+				E4ADF8FE6A243AAB8CE3DD31 /* MemoryStore.swift */,
+				6A328564614776A17B788E8D /* AppLogger.swift */,
+			);
+			path = "Core/Storage";
+			sourceTree = "<group>";
+		};
+		3B2468B96939DD97CD9E3DA0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7D35CAF4481FAB5856B15547 /* HTTPClient.swift */,
+				96E25D8994CA6B91AF14527E /* JSONValue.swift */,
+			);
+			path = "Core/Networking";
+			sourceTree = "<group>";
+		};
+		FF0E23B6087531CB47B4721E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A21DD6044BB4E1BECEE02F5D /* Agent */,
+				7C3F281CA6171E84FE090357 /* Providers */,
+				51A732228ED8D21E5511343F /* Skills */,
+				F686F932C8E9E811A95B5468 /* Storage */,
+				3B2468B96939DD97CD9E3DA0 /* Networking */,
+			);
+			path = "Core";
+			sourceTree = "<group>";
+		};
+		DDB6D1FAFE440B516EFA19A6 /* WebSearch */ = {
+			isa = PBXGroup;
+			children = (
+				395879F19141C1E887933D4B /* WebSearchSkill.swift */,
+			);
+			path = "Skills/WebSearch";
+			sourceTree = "<group>";
+		};
+		539740B4CC79C4C5062C79CC /* News */ = {
+			isa = PBXGroup;
+			children = (
+				8F36B534BB352DAD4A7B7C21 /* NewsSkill.swift */,
+			);
+			path = "Skills/News";
+			sourceTree = "<group>";
+		};
+		7B272CCE8769197CF53BFBE2 /* WebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				63DE0632403F789CA4C82E54 /* WebBrowserSkill.swift */,
+			);
+			path = "Skills/WebBrowser";
+			sourceTree = "<group>";
+		};
+		4FD88D6D2860A03CEB8EA0BB /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				D54245992E3AAFBA0458ADAF /* VoiceSkill.swift */,
+			);
+			path = "Skills/Voice";
+			sourceTree = "<group>";
+		};
+		43C6AF89D485516F7A78C798 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				55775A1F51ECE9DEE8BF2248 /* VisionSkill.swift */,
+			);
+			path = "Skills/Vision";
+			sourceTree = "<group>";
+		};
+		17D3682C33B8CF6821C937BF /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C9CC23D0C8348EB461FD34 /* FilesSkill.swift */,
+			);
+			path = "Skills/Files";
+			sourceTree = "<group>";
+		};
+		E5E1C0DC49D2365842317AC9 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				BA98B4BF04FC16D0CA2A8225 /* MemorySkill.swift */,
+			);
+			path = "Skills/Memory";
+			sourceTree = "<group>";
+		};
+		B2FA2C27ABFD0E5925205227 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				63CB7B56CD4C0089B7A05792 /* CalendarSkill.swift */,
+			);
+			path = "Skills/Calendar";
+			sourceTree = "<group>";
+		};
+		1B4B6378DBF3786FC6E2A9E3 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Skills/Reminders";
+			sourceTree = "<group>";
+		};
+		F4C3FB022A36589F476D7B71 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				7A9F82CECA27248149110EED /* WeatherSkill.swift */,
+			);
+			path = "Skills/Weather";
+			sourceTree = "<group>";
+		};
+		A5B2263D3F0DB9681AF0D210 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6FC8FC5991D7C3E024349DFE /* APISkill.swift */,
+			);
+			path = "Skills/API";
+			sourceTree = "<group>";
+		};
+		0308390973466B857AFAFC1A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				1F68ECEAFECB877022B82465 /* CodeSkill.swift */,
+			);
+			path = "Skills/Code";
+			sourceTree = "<group>";
+		};
+		8125DF28B5BC9AFE304E295D /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6D1FAFE440B516EFA19A6 /* WebSearch */,
+				539740B4CC79C4C5062C79CC /* News */,
+				7B272CCE8769197CF53BFBE2 /* WebBrowser */,
+				4FD88D6D2860A03CEB8EA0BB /* Voice */,
+				43C6AF89D485516F7A78C798 /* Vision */,
+				17D3682C33B8CF6821C937BF /* Files */,
+				E5E1C0DC49D2365842317AC9 /* Memory */,
+				B2FA2C27ABFD0E5925205227 /* Calendar */,
+				1B4B6378DBF3786FC6E2A9E3 /* Reminders */,
+				F4C3FB022A36589F476D7B71 /* Weather */,
+				A5B2263D3F0DB9681AF0D210 /* API */,
+				0308390973466B857AFAFC1A /* Code */,
+			);
+			path = "Skills";
+			sourceTree = "<group>";
+		};
+		79E081CD6249144F10C66A67 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7E40C37F2273BAB44055A5E9 /* ChatView.swift */,
+			);
+			path = "UI/Chat";
+			sourceTree = "<group>";
+		};
+		FA78F4A45F49BA5DBA3EBDF6 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BF53BC207E7E6810B3747 /* VoiceView.swift */,
+			);
+			path = "UI/Voice";
+			sourceTree = "<group>";
+		};
+		F07548E523A6FB7F095B3113 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				9FCB4B87FBDFE3C7408F709C /* SkillsView.swift */,
+			);
+			path = "UI/Skills";
+			sourceTree = "<group>";
+		};
+		92AD9645EC888A37AD4C702D /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				3A25458D45B0A3E4E5AF3F71 /* MemoryView.swift */,
+			);
+			path = "UI/Memory";
+			sourceTree = "<group>";
+		};
+		434DF37F0EC1DEDF26CC7B03 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8573D254A71E562028A30 /* HistoryView.swift */,
+			);
+			path = "UI/History";
+			sourceTree = "<group>";
+		};
+		43E7A5BDA2A5D2AA3E88C62F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0393F6655D2D2937C94CC92D /* SettingsView.swift */,
+			);
+			path = "UI/Settings";
+			sourceTree = "<group>";
+		};
+		91E739482E71ED3D790B2E37 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9A70A6EC7ECAA6A54E17B6A9 /* RootView.swift */,
+				79E081CD6249144F10C66A67 /* Chat */,
+				FA78F4A45F49BA5DBA3EBDF6 /* Voice */,
+				F07548E523A6FB7F095B3113 /* Skills */,
+				92AD9645EC888A37AD4C702D /* Memory */,
+				434DF37F0EC1DEDF26CC7B03 /* History */,
+				43E7A5BDA2A5D2AA3E88C62F /* Settings */,
+			);
+			path = "UI";
+			sourceTree = "<group>";
+		};
+		D2BD3A6FFF7C2EAE1A5B44B5 /* AstraAI */ = {
+			isa = PBXGroup;
+			children = (
+				D2563DCF530CFD0C37B9B901 /* FileManagerExtension.swift */,
+				B78556CD33D6DAAB7BE1C701 /* AppEnvironment.swift */,
+				2FD8273571E178F268D299F6 /* AstraAIApp.swift */,
+				FF0E23B6087531CB47B4721E /* Core */,
+				8125DF28B5BC9AFE304E295D /* Skills */,
+				91E739482E71ED3D790B2E37 /* UI */,
+				8D4D6716AE9F8D8F28246205 /* Resources */,
+			);
+			path = "AstraAI";
+			sourceTree = "<group>";
+		};
+		8D4D6716AE9F8D8F28246205 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA8CDCE55AD859756C908D /* Assets.xcassets */,
+				EE1D1E2002267DEB1DBE387E /* Info.plist */,
+			);
+			path = "AstraAI/Resources";
+			sourceTree = "<group>";
+		};
+		942A9A1A63793D61082FFAA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B22A2E9E0D237D5A14A0DA8 /* AstraAI.app */,
+				B2DCACFA5A6035C5AAE2A821 /* AstraAITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		1FCE4F247A24DED3A8C24A4E /* AstraAITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B97C1A57722488B97E2E072 /* AgentCoreTests.swift */,
+				FD8AA4FF7F9F5C13A42EA362 /* SkillRegistryTests.swift */,
+				1B2EE59FBD0D9034609915BB /* JSONValueAndConversationTests.swift */,
+				2690C1500A62E0C440F000CB /* MemoryStoreTests.swift */,
+			);
+			path = "AstraAITests";
+			sourceTree = "<group>";
+		};
+		EC6AE75C017423A0C5A951A8 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				D2BD3A6FFF7C2EAE1A5B44B5 /* AstraAI */,
+				1FCE4F247A24DED3A8C24A4E /* AstraAITests */,
+				942A9A1A63793D61082FFAA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7FAE16F6AA6B12C280B0E1 /* AstraAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89A54E574C190A4ED4D1717C /* Build configuration list for PBXNativeTarget "AstraAI" */;
+			buildPhases = (
+				C303391874105B403EDAFAED /* Sources */,
+				B3967E92F646B066A7221524 /* Frameworks */,
+				F4FA315EB42AFBC39C864CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstraAI;
+			packageProductDependencies = (
+			);
+			productName = AstraAI;
+			productReference = 9B22A2E9E0D237D5A14A0DA8 /* AstraAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8266701F217A1B009BE1824A /* AstraAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71DFB675BA78ECAE30626378 /* Build configuration list for PBXNativeTarget "AstraAITests" */;
+			buildPhases = (
+				056DA714EBAD4B2B60880F15 /* Sources */,
+				DB7D723A10D96A0609CE750A /* Frameworks */,
+				1A7936440619776AC566A3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstraAITests;
+			packageProductDependencies = (
+			);
+			productName = AstraAITests;
+			productReference = B2DCACFA5A6035C5AAE2A821 /* AstraAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CB7FAE16F6AA6B12C280B0E1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					8266701F217A1B009BE1824A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CB7FAE16F6AA6B12C280B0E1;
+					};
+				};
+			};
+			buildConfigurationList = 461CD6BF02EFBF460B588CEF /* Build configuration list for PBXProject "AstraAI" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = "fr";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"en",
+				"fr",
+				Base,
+			);
+			mainGroup = EC6AE75C017423A0C5A951A8;
+			packageReferences = (
+			);
+			productRefGroup = 942A9A1A63793D61082FFAA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7FAE16F6AA6B12C280B0E1 /* AstraAI */,
+				8266701F217A1B009BE1824A /* AstraAITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4FA315EB42AFBC39C864CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74077D0766ACAF76D776610 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7936440619776AC566A3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C303391874105B403EDAFAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D0E516084AD99A51227F5F /* CalendarSkill.swift in Sources */,
+				91DAD81F505FAA13C5DB7AF0 /* WeatherSkill.swift in Sources */,
+				F9229E276F2EEBC585F9AF99 /* APISkill.swift in Sources */,
+				2F353459A02D221199A1EC81 /* WebSearchSkill.swift in Sources */,
+				2055E7D2F57AA8D8FBF10D4C /* FilesSkill.swift in Sources */,
+				D59B4C423E4E5C70BA468635 /* MemorySkill.swift in Sources */,
+				3A47F301EA413CB507C302A8 /* VisionSkill.swift in Sources */,
+				A559C4CEC9D828E3B1211A0C /* WebBrowserSkill.swift in Sources */,
+				5FB6FCEC7AF5A5D7F0721004 /* NewsSkill.swift in Sources */,
+				BD69D2FABD751B9BA90DD1CE /* CodeSkill.swift in Sources */,
+				C59444327EAD49D463233B36 /* VoiceSkill.swift in Sources */,
+				1A517A293C4FEC1DA7E2EA2B /* RootView.swift in Sources */,
+				256821ED2C3FEF2A771BBA95 /* ChatView.swift in Sources */,
+				510533E84901F28AD6D9FE5B /* SkillsView.swift in Sources */,
+				B188AD5A98AACC8E36AE6F6F /* SettingsView.swift in Sources */,
+				20B80CA6560FAF7A79E6B3D6 /* MemoryView.swift in Sources */,
+				D5F9B791ED0D36F53F374131 /* HistoryView.swift in Sources */,
+				A65EC5CF6FA842BDF1B827A9 /* VoiceView.swift in Sources */,
+				0A5826D2E8696144F1EFD682 /* FileManagerExtension.swift in Sources */,
+				8138750321F729F3B33EF135 /* AppEnvironment.swift in Sources */,
+				A51965B1E4B54C1FED69938F /* AstraAIApp.swift in Sources */,
+				FA3352EE24295D0396ECA545 /* AgentSkill.swift in Sources */,
+				E06AE992BD99599B1CEDDB97 /* SkillRegistry.swift in Sources */,
+				FC9F02B87F92B1958F5265E1 /* AIProvider.swift in Sources */,
+				57FB90B15C1646E0FC751AEF /* AIProviderSettings.swift in Sources */,
+				DCFB11155872896669DA25D0 /* AIProviderRegistry.swift in Sources */,
+				7A1A69A465D003BE9C42B983 /* ProviderImplementations.swift in Sources */,
+				E1B564C66153CDEEC943A688 /* ConversationStore.swift in Sources */,
+				A847F305C3F9AB6D595190D7 /* SecureKeyStore.swift in Sources */,
+				7E302F273F3572F70ED7A070 /* MemoryStore.swift in Sources */,
+				756413B9C7BA1666BC84B109 /* AppLogger.swift in Sources */,
+				41FE17607CF23B94CA9CA408 /* AgentCore.swift in Sources */,
+				49562A8FBC376323CD6309AD /* AgentMessage.swift in Sources */,
+				DC7AB9F5F48941383DD54FB3 /* AgentEvent.swift in Sources */,
+				C5010EEB540198C4B105CD51 /* ToolCall.swift in Sources */,
+				D20840C5FDDDB72BEC70351C /* AgentContext.swift in Sources */,
+				2D5B221BBE62736FEEFC8513 /* HTTPClient.swift in Sources */,
+				AA8BBCAE59EE073077F3DD1B /* JSONValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056DA714EBAD4B2B60880F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E19714E4138FA6BF0819A3 /* AgentCoreTests.swift in Sources */,
+				7E9421E0A6F50CB685D034BE /* SkillRegistryTests.swift in Sources */,
+				F1032C5DCD7D01BBDF039BC0 /* JSONValueAndConversationTests.swift in Sources */,
+				2A79F6B608DDC64ABFB7382B /* MemoryStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D45766170DCCA05AF05902A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		006ADE022EFDAFC62B873232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+		F0B6C82E1E400020046E0F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AstraAI/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astra AI";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astraai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		889039B614F0C8069EEF6723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AstraAI/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astra AI";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astraai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7BF80B61CE328A3644122EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astraai.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstraAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstraAI";
+			};
+			name = Debug;
+		};
+		3BA9C47733FE1C768626948A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astraai.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstraAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstraAI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		461CD6BF02EFBF460B588CEF /* Build configuration list for PBXProject "AstraAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D45766170DCCA05AF05902A /* Debug */,
+				006ADE022EFDAFC62B873232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89A54E574C190A4ED4D1717C /* Build configuration list for PBXNativeTarget "AstraAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B6C82E1E400020046E0F38 /* Debug */,
+				889039B614F0C8069EEF6723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71DFB675BA78ECAE30626378 /* Build configuration list for PBXNativeTarget "AstraAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7BF80B61CE328A3644122EA /* Debug */,
+				3BA9C47733FE1C768626948A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244210E48437B6556980A702 /* Project object */;
+}

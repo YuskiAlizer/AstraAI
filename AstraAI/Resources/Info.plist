@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Astra AI</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIColorName</key>
+        <string>AccentColor</string>
+    </dict>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <!-- Permissions -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Astra AI utilise le microphone pour la saisie vocale et la reconnaissance de parole.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Astra AI utilise la reconnaissance vocale pour transformer votre voix en texte.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Astra AI utilise la caméra pour capturer et analyser des images.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Astra AI accède à votre photothèque pour sélectionner et analyser des images.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Astra AI utilise votre localisation pour fournir la météo locale. Vous pouvez aussi saisir une ville manuellement.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>Astra AI accède au calendrier pour consulter et créer des événements. Aucun accès sans votre autorisation.</string>
+    <key>NSCalendarsFullAccessUsageDescription</key>
+    <string>Astra AI accède au calendrier pour consulter et créer des événements après votre autorisation.</string>
+    <key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+    <string>Astra AI peut créer des événements dans le calendrier après votre autorisation.</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>Astra AI accède aux rappels pour créer des rappels. Aucun accès sans votre autorisation.</string>
+    <key>NSRemindersFullAccessUsageDescription</key>
+    <string>Astra AI accède aux rappels pour créer des rappels. Aucun accès sans votre autorisation.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>Astra AI accède aux fichiers que vous sélectionnez pour les lire et les analyser.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Astra AI peut accéder aux contacts si nécessaire pour certaines tâches.</string>
+    <!-- App Transport Security: Allow local network for Ollama -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+</dict>
+</plist>
