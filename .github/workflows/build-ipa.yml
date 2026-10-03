@@ -31,6 +31,8 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
+            ASSETCATALOG_COMPILER_SKIP_VALIDATION=YES \
+            ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS=NO \
             clean build
 
           mkdir -p build/Payload
