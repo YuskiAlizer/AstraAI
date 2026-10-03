@@ -100,7 +100,7 @@ final class AppEnvironment: ObservableObject {
         skillRegistry.register(RemindersSkill())
         skillRegistry.register(WeatherSkill(httpClient: httpClient))
         skillRegistry.register(APISkill(httpClient: httpClient, keyStore: secureKeyStore))
-        skillRegistry.register(CodeSkill())
+        skillRegistry.register(CodeSkill(httpClient: httpClient))
     }
 
     func loadConversations() async {

@@ -108,9 +108,9 @@ final class FilesSkill: AgentSkill, @unchecked Sendable {
         case "pdf":
             content = extractPDFText(from: url)
         case "rtf":
-            if let data = try? Data(contentsOf: url),
-               let rtfString = try? NSAttributedString(rtf: data, documentAttributes: nil).string {
-                content = rtfString
+            if let data = try? Data(contentsOf: url) {
+                let rtfString = NSAttributedString(rtf: data, documentAttributes: nil)
+                content = rtfString?.string ?? ""
             }
         case "doc", "docx":
             // Limited support — would need additional frameworks
