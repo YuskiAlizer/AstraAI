@@ -4,7 +4,6 @@ import os.log
 /// Centralized logging system. Uses os.Logger for system-level logging
 /// and maintains an in-memory buffer for the UI observability view.
 /// NEVER logs API keys or sensitive data.
-@MainActor
 final class AppLogger: ObservableObject {
 
     static let shared = AppLogger()
@@ -33,40 +32,45 @@ final class AppLogger: ObservableObject {
 
     private let osLog = Logger(subsystem: "com.astraai.app", category: "agent")
     private let maxEntries = 500
+    private let queue = DispatchQueue(label: "com.astraai.logger", target: .main)
 
     private init() {}
 
-    // MARK: - Public
+    // MARK: - Public (nonisolated — safe to call from any actor)
 
-    func debug(_ message: String) {
+    nonisolated func debug(_ message: String) {
         log(.debug, message)
     }
 
-    func info(_ message: String) {
+    nonisolated func info(_ message: String) {
         log(.info, message)
     }
 
-    func warning(_ message: String) {
+    nonisolated func warning(_ message: String) {
         log(.warning, message)
     }
 
-    func error(_ message: String) {
+    nonisolated func error(_ message: String) {
         log(.error, message)
     }
 
-    func clear() {
-        entries.removeAll()
+    nonisolated func clear() {
+        queue.async {
+            self.entries.removeAll()
+        }
     }
 
     // MARK: - Private
 
-    private func log(_ level: Level, _ message: String) {
+    nonisolated private func log(_ level: Level, _ message: String) {
         let entry = LogEntry(timestamp: Date(), level: level, message: message)
-        entries.append(entry)
 
-        // Trim old entries
-        if entries.count > maxEntries {
-            entries.removeFirst(entries.count - maxEntries)
+        // Update @Published entries on main thread
+        queue.async {
+            self.entries.append(entry)
+            if self.entries.count > self.maxEntries {
+                self.entries.removeFirst(self.entries.count - self.maxEntries)
+            }
         }
 
         // Also log to system log (for Console.app / device logs)
