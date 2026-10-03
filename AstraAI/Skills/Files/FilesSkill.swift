@@ -108,12 +108,8 @@ final class FilesSkill: AgentSkill, @unchecked Sendable {
         case "pdf":
             content = extractPDFText(from: url)
         case "rtf":
-            if let data = try? Data(contentsOf: url) {
-                var attrs: NSDictionary?
-                if let rtfString = try? NSAttributedString(rtf: data, documentAttributes: &attrs) {
-                    content = rtfString.string
-                }
-            }
+            // RTF support requires macOS-specific APIs not available on iOS
+            content = "Format RTF non supporté sur iOS. Utilisez PDF ou texte."
         case "doc", "docx":
             // Limited support — would need additional frameworks
             content = "Format \(ext) non supporté en lecture directe. Utilisez PDF ou texte."
