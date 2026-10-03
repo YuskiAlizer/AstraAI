@@ -3,7 +3,6 @@ import Security
 
 /// Secure storage for API keys using the iOS Keychain.
 /// No API keys are ever stored in plain text or hardcoded in the app.
-@MainActor
 final class SecureKeyStore: ObservableObject {
 
     private let service = "com.astraai.app"
@@ -11,41 +10,41 @@ final class SecureKeyStore: ObservableObject {
 
     // MARK: - API Key Storage
 
-    func saveAPIKey(_ key: String, for providerId: String) {
+    nonisolated func saveAPIKey(_ key: String, for providerId: String) {
         let account = "apikey_\(providerId)"
         save(key: key, account: account)
     }
 
-    func loadAPIKey(for providerId: String) -> String? {
+    nonisolated func loadAPIKey(for providerId: String) -> String? {
         let account = "apikey_\(providerId)"
         return load(account: account)
     }
 
-    func deleteAPIKey(for providerId: String) {
+    nonisolated func deleteAPIKey(for providerId: String) {
         let account = "apikey_\(providerId)"
         delete(account: account)
     }
 
     // MARK: - Generic API Key Storage (for custom APIs)
 
-    func saveCustomAPIKey(_ key: String, identifier: String) {
+    nonisolated func saveCustomAPIKey(_ key: String, identifier: String) {
         let account = "custom_\(identifier)"
         save(key: key, account: account)
     }
 
-    func loadCustomAPIKey(identifier: String) -> String? {
+    nonisolated func loadCustomAPIKey(identifier: String) -> String? {
         let account = "custom_\(identifier)"
         return load(account: account)
     }
 
-    func deleteCustomAPIKey(identifier: String) {
+    nonisolated func deleteCustomAPIKey(identifier: String) {
         let account = "custom_\(identifier)"
         delete(account: account)
     }
 
     // MARK: - Keychain Operations
 
-    private func save(key: String, account: String) {
+    nonisolated private func save(key: String, account: String) {
         let data = Data(key.utf8)
 
         // Delete existing item first
@@ -71,7 +70,7 @@ final class SecureKeyStore: ObservableObject {
         }
     }
 
-    private func load(account: String) -> String? {
+    nonisolated private func load(account: String) -> String? {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,
@@ -92,7 +91,7 @@ final class SecureKeyStore: ObservableObject {
         return key
     }
 
-    private func delete(account: String) {
+    nonisolated private func delete(account: String) {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,

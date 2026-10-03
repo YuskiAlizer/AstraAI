@@ -146,7 +146,7 @@ struct ChatView: View {
                 } label: {
                     Image(systemName: "mic.fill")
                         .font(.title2)
-                        .foregroundStyle(.accentColor)
+                        .foregroundStyle(Color.accentColor)
                 }
 
                 // Send button
@@ -156,7 +156,7 @@ struct ChatView: View {
                     } label: {
                         Image(systemName: "arrow.up.circle.fill")
                             .font(.title2)
-                            .foregroundStyle(.accentColor)
+                            .foregroundStyle(Color.accentColor)
                     }
                     .transition(.scale.combined(with: .opacity))
                 }
@@ -185,9 +185,11 @@ struct ChatView: View {
         inputText = ""
         inputFocused = false
 
-        guard var conversation = environment.currentConversation else { return }
-        environment.agentCore.run(userMessage: message, conversation: &conversation)
-        environment.currentConversation = conversation
+        guard let conversation = environment.currentConversation else { return }
+        Task {
+            let updated = await environment.agentCore.run(userMessage: message, conversation: conversation)
+            environment.currentConversation = updated
+        }
     }
 }
 
@@ -216,7 +218,7 @@ struct MessageBubbleView: View {
                     HStack(spacing: 6) {
                         Image(systemName: "sparkles")
                             .font(.caption)
-                            .foregroundStyle(.accentColor)
+                            .foregroundStyle(Color.accentColor)
                         Text("Astra AI")
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -274,7 +276,7 @@ struct StreamingBubbleView: View {
                 HStack(spacing: 6) {
                     Image(systemName: "sparkles")
                         .font(.caption)
-                        .foregroundStyle(.accentColor)
+                        .foregroundStyle(Color.accentColor)
                     Text("Astra AI")
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -426,7 +428,7 @@ struct ConfirmationView: View {
             VStack(spacing: 24) {
                 Image(systemName: "shield.lefthalf.filled")
                     .font(.system(size: 48))
-                    .foregroundStyle(.accentColor)
+                    .foregroundStyle(Color.accentColor)
 
                 Text("Confirmation requise")
                     .font(.headline)

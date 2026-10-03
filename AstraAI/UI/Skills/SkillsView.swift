@@ -101,7 +101,7 @@ struct SkillCardView: View {
                         .frame(width: 44, height: 44)
                     Image(systemName: skill.category.iconName)
                         .font(.title2)
-                        .foregroundStyle(.accentColor)
+                        .foregroundStyle(Color.accentColor)
                 }
 
                 // Title and description
@@ -122,7 +122,7 @@ struct SkillCardView: View {
                     set: { _ in onToggle() }
                 ))
                 .labelsHidden()
-                .tint(.accentColor)
+                .tint(Color.accentColor)
             }
 
             // Permissions
