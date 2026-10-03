@@ -49,7 +49,6 @@
 		7E9421E0A6F50CB685D034BE /* SkillRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8AA4FF7F9F5C13A42EA362 /* SkillRegistryTests.swift */; };
 		F1032C5DCD7D01BBDF039BC0 /* JSONValueAndConversationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EE59FBD0D9034609915BB /* JSONValueAndConversationTests.swift */; };
 		2A79F6B608DDC64ABFB7382B /* MemoryStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2690C1500A62E0C440F000CB /* MemoryStoreTests.swift */; };
-		F74077D0766ACAF76D776610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BA8CDCE55AD859756C908D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +97,6 @@
 		9B22A2E9E0D237D5A14A0DA8 /* AstraAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstraAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DCACFA5A6035C5AAE2A821 /* AstraAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1D1E2002267DEB1DBE387E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AstraAI/Resources/Info.plist"; sourceTree = SOURCE_ROOT; };
-		D7BA8CDCE55AD859756C908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "AstraAI/Resources/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,8 +374,6 @@
 		8D4D6716AE9F8D8F28246205 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D7BA8CDCE55AD859756C908D /* Assets.xcassets */,
-				EE1D1E2002267DEB1DBE387E /* Info.plist */,
 			);
 			path = "AstraAI/Resources";
 			sourceTree = "<group>";
@@ -496,7 +492,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F74077D0766ACAF76D776610 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,8 +691,8 @@
 		F0B6C82E1E400020046E0F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				
+				
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -724,8 +719,8 @@
 		889039B614F0C8069EEF6723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				
+				
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
